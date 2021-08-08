@@ -1,4 +1,4 @@
-package com.egypt.nagwatask.data.model
+package com.egypt.nagwatask.model
 import com.google.gson.annotations.SerializedName
 
 
