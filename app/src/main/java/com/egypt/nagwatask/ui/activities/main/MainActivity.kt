@@ -33,26 +33,22 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var flexboxLayoutManager: FlexboxLayoutManager
 
+    @Inject
+    lateinit var viewModel: MainViewModel
+
     @SuppressLint("CheckResult")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val model: MainViewModel by viewModels()
 
-        DaggerAppComponent.builder().build().inject(this)
+
+        DaggerAppComponent.create().inject(this)
+
 
         setUpRecyclerView()
 
-        model.getMovies().subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread())
-            .subscribe({ moviesList ->
-                movieAdapter.setMovies(moviesList)
-            }, { error ->
-                Log.d(TAG, "onError: " + error.message)
-                val movieList: MovieModel =
-                    gson.fromJson(JsonString.jsonString, MovieModel::class.java)
-                movieAdapter.setMovies(movieList)
-                Toast.makeText(this, error.message, Toast.LENGTH_SHORT).show()
-            })
+
+
     }
 
     private fun setUpRecyclerView() {
