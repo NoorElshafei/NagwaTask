@@ -26,7 +26,7 @@ class MovieAdapter(val movieList: ArrayList<MovieModel.MovieModelItem>) :
     }
 
     override fun onBindViewHolder(holder: CategoryViewHolder, position: Int) {
-
+        
 
     }
 
