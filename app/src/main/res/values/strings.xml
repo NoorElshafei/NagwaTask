@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">NagwaTask</string>
+    <string name="download">Download</string>
+    <string name="see">See</string>
+    <string name="see_video">See video</string>
+    <string name="read_pdf">Read PDF</string>
 </resources>

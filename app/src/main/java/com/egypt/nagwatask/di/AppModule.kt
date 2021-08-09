@@ -3,8 +3,8 @@ package com.egypt.nagwatask.di
 import com.egypt.nagwatask.data.networks.ApiService
 import com.egypt.nagwatask.data.networks.ApiServiceFactory
 import com.egypt.nagwatask.model.MovieModel
-import com.egypt.nagwatask.ui.activities.main.MainViewModel
-import com.egypt.nagwatask.ui.activities.main.MovieRepository
+import com.egypt.nagwatask.ui.main.MainViewModel
+import com.egypt.nagwatask.ui.main.MovieRepository
 import com.egypt.nagwatask.ui.adapter.MovieAdapter
 import com.google.gson.Gson
 import dagger.Module

@@ -18,7 +18,7 @@ class JsonString {
                 "  {\n" +
                 "    \"id\": 3,\n" +
                 "    \"type\": \"PDF\",\n" +
-                "    \"url\": \"(https://kotlinlang.org/docs/kotlin-reference.pdf\",\n" +
+                "    \"url\": \"https://kotlinlang.org/docs/kotlin-reference.pdf\",\n" +
                 "    \"name\": \"PDF 3\"\n" +
                 "  },\n" +
                 "  {\n" +

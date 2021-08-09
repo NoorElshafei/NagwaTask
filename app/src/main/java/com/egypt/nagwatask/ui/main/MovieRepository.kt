@@ -1,4 +1,4 @@
-package com.egypt.nagwatask.ui.activities.main
+package com.egypt.nagwatask.ui.main
 
 
 import android.content.ContentValues.TAG
